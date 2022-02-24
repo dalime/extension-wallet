@@ -55,7 +55,7 @@ export default function Collectible({ thumbnail, name, author }: Props): JSX.Ele
           marginLeft: 13,
         }}>
           by{' '}
-          <a style={{ color: 'purple', }}>
+          <a style={{ color: '#885FFF', }}>
             {author}
           </a>
         </span>
