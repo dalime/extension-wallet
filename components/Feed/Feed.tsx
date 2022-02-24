@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useRouter } from 'next/router';
 import FeedSection from './FeedSection';
 import styles from '../../styles/Feed.module.css';
 import Button from '../Common/Button';
@@ -8,6 +9,8 @@ import Transactions from '../Transactions/Transactions';
 import ThumbnailList from '../Common/ThumbnailList';
 
 export default function Feed(): JSX.Element {
+  const router = useRouter();
+
   const [viewCollectibles, setViewCollectibles] = useState<boolean>(true);
 
   const thumbnails = [
@@ -24,7 +27,7 @@ export default function Feed(): JSX.Element {
         name: 'Contacts',
         textColor: '#414047',
         child: <ThumbnailList thumbnails={thumbnails} />,
-        toSection: () => { },
+        toSection: () => router.push('/contacts'),
         backgroundColor: '#F5F5F5',
       },
       {},

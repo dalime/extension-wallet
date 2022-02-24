@@ -23,6 +23,10 @@ export default function FeedSection({ name, nameStyle, textColor, child, toSecti
       style={{
         ...style,
         background: backgroundImg ? `url(${backgroundImg}) no-repeat ${backgroundColor || 'transparent'}` : `${backgroundColor || 'transparent'}`,
+        cursor: 'pointer',
+      }}
+      onClick={() => {
+        toSection();
       }}
     >
       <div className={styles.spaceBetween}>
@@ -40,6 +44,7 @@ export default function FeedSection({ name, nameStyle, textColor, child, toSecti
           style={{ color: textColor, }}
           onClick={(e) => {
             e.preventDefault();
+            e.stopPropagation();
             toSection();
           }}
         >
