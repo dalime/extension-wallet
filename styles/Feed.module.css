@@ -2,3 +2,64 @@
   padding: 0 2rem;
   min-height: 100vh;
 }
+
+.row, .spaceBetween {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.spaceBetween {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.feed {
+  padding: 10px;
+}
+
+.feedSection {
+  border-radius: 6px;
+  height: 99px;
+  width: 100%;
+  padding: 10px;
+}
+
+.feedSection p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.154px;
+}
+
+.button {
+  background: transparent;
+  border: none;
+}
+
+.sectionLabel {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.154px;
+}
+
+.listLabel {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.154px;
+  color: #33373B;
+  background: transparent;
+  border: none;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+}

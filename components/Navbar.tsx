@@ -48,7 +48,7 @@ export default function Navbar(): JSX.Element {
       <div>
         <UserTag
           imgSrc="/images/icons/user_icon_full.svg"
-          name="john.near"
+          name="Johndoe.near"
           dropdown={() => { }}
         />
       </div>
