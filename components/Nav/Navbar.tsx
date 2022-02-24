@@ -36,6 +36,15 @@ export default function Navbar(): JSX.Element {
 
   return (
     <nav className={styles.navbar}>
+      {router.pathname !== '/' && renderButton(
+        <Image
+          src="/images/symbols/arrow_left.svg"
+          alt="Home symbol"
+          width={20}
+          height={22}
+        />,
+        () => router.back(),
+      )}
       {renderButton(
         <Image
           src="/images/symbols/home_symbol_purple.svg"

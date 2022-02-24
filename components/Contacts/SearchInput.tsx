@@ -11,7 +11,6 @@ export default function SearchInput(): JSX.Element {
       placeholder="Search Contact"
       value={searchString}
       onChange={(e) => setSearchString(e.target.value)}
-
     />
   )
 }
