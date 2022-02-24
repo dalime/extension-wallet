@@ -9,13 +9,13 @@ const Home: NextPage = () => {
       <Head>
         <title>Extension Wallet</title>
         <meta name="description" content="Extension Wallet for PrimeLab" />
-        <link rel="icon" href="/images/primelab_logo.ico" />
+        <link rel="icon" href="/images/logos/primelab_logo.ico" />
       </Head>
 
       <main className={styles.main}>
         <div className={styles.row}>
           <Image
-            src="/images/home_symbol.svg"
+            src="/images/symbols/home_symbol.svg"
             alt="Home symbol"
             width={27.42}
             height={30}
@@ -33,7 +33,7 @@ const Home: NextPage = () => {
           rel="noopener noreferrer"
         >
           <span className={styles.logo}>
-            <Image src="/images/near_logo.svg" alt="Near Logo" width={114} height={30} />
+            <Image src="/images/logos/near_logo.svg" alt="Near Logo" width={114} height={30} />
           </span>
         </a>
       </footer>

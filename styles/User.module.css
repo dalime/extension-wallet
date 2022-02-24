@@ -1,0 +1,28 @@
+.tag {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #BEBEC2;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+  border-radius: 50px;
+  padding: 0px 10px;
+  height: 45px;
+}
+
+.username {
+  margin-left: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.3px;
+}
+
+.dropdown {
+  background: transparent;
+  border: none;
+}
