@@ -1,27 +1,55 @@
 .container {
   padding: 0 2rem;
+  background-image: url('../public/images/home_background.png');
+  background-size: cover;
+  min-height: 100vh;
 }
 
 .main {
-  min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.main h1, .main p {
+  color: white;
+}
+
+.main p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
 }
 
 .footer {
-  display: flex;
-  flex: 1;
+  position: absolute;
+  bottom: 0;
   padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+  margin-bottom: 20px;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .footer a {
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,6 +134,18 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-height: 100%;
+}
+
+.row h1 {
+  margin-left: 5px;
 }
 
 @media (max-width: 600px) {
