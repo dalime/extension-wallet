@@ -59,7 +59,7 @@ export default function Feed(): JSX.Element {
       </div>
       <div style={{ height: 10 }} />
       <FeedSection
-        name="Start Creating your NFTToday"
+        name="Start Creating your NFT Today"
         child={<></>}
         backgroundColor="#F7E9FF"
         backgroundImg='/images/backgrounds/create_nft_seections.png'

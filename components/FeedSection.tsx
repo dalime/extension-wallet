@@ -40,8 +40,8 @@ export default function FeedSection({ name, textColor, child, toSection, backgro
           <Image
             src="/images/symbols/chevron_right.svg"
             alt="Home symbol"
-            width={5.33}
-            height={10}
+            width={15}
+            height={15}
           />
         </button>
       </div>
