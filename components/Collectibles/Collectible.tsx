@@ -29,33 +29,36 @@ export default function Collectible({ thumbnail, name, author }: Props): JSX.Ele
           height={60}
         />
       </div>
-      <div>
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'flex-start',
+      }}>
         <p
           style={{
             fontStyle: 'normal',
             fontWeight: 600,
             fontSize: 14,
-            lineHeight: 19,
-            textAlign: 'center',
+            textAlign: 'left',
             color: '#000000',
             marginLeft: 13,
           }}
         >
           {name}
-          &nbsp;
-          <span style={{
-            fontStyle: 'normal',
-            fontWeight: 500,
-            fontSize: 14,
-            lineHeight: 19,
-            textAlign: 'center',
-          }}>
-            by{' '}
-            <a style={{ color: 'purple', }}>
-              {author}
-            </a>
-          </span>
         </p>
+        <span style={{
+          fontStyle: 'normal',
+          fontWeight: 500,
+          fontSize: 14,
+          textAlign: 'left',
+          marginLeft: 13,
+        }}>
+          by{' '}
+          <a style={{ color: 'purple', }}>
+            {author}
+          </a>
+        </span>
       </div>
       <button
         style={{

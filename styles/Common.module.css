@@ -1,0 +1,12 @@
+.thumbnailImage {
+  border-radius: 50%;
+  margin-left: -20px;
+}
+
+.arrowButton span {
+  margin-left: 10px;
+}
+
+.chevronIcon {
+  margin-left: 10px;
+}

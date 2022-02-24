@@ -1,20 +1,29 @@
 import React, { useState } from 'react';
 import FeedSection from './FeedSection';
 import styles from '../../styles/Feed.module.css';
+import Button from '../Common/Button';
+import ArrowButton from '../Common/ArrowButton';
 import Collectibles from '../Collectibles/Collectibles';
 import Transactions from '../Transactions/Transactions';
+import ThumbnailList from '../Common/ThumbnailList';
 
 export default function Feed(): JSX.Element {
   const [viewCollectibles, setViewCollectibles] = useState<boolean>(true);
+
+  const thumbnails = [
+    '/images/contacts/contact_48.svg',
+    '/images/contacts/contact_49.svg',
+    '/images/contacts/contact_50.svg',
+    '/images/contacts/contact_51.svg',
+    '/images/contacts/contact_52.svg',
+  ];
 
   const renderSections = (): JSX.Element[] => {
     const sections = [
       {
         name: 'Contacts',
         textColor: '#414047',
-        child: <>
-
-        </>,
+        child: <ThumbnailList thumbnails={thumbnails} />,
         toSection: () => { },
         backgroundColor: '#F5F5F5',
       },
@@ -22,9 +31,12 @@ export default function Feed(): JSX.Element {
       {
         name: 'web3 Apps',
         textColor: '#FFFFFF',
-        child: <>
-
-        </>,
+        child: <Button
+          text='12 Connected'
+          textColor='#FFFFFF'
+          backgroundColor='#18D7A9'
+          onClick={() => { }}
+        />,
         toSection: () => { },
         backgroundColor: '#885FFF',
         backgroundImage: '/images/backgrounds/web3_apps',
@@ -60,7 +72,28 @@ export default function Feed(): JSX.Element {
       <div style={{ height: 10 }} />
       <FeedSection
         name="Start Creating your NFT Today"
-        child={<></>}
+        nameStyle={{
+          fontStyle: 'normal',
+          fontWeight: 600,
+          fontSize: 22,
+          letterSpacing: '-0.04em',
+          color: '#414047',
+        }}
+        child={
+          <ArrowButton
+            action={() => { }}
+            backgroundColor="#885FFF"
+            text='Create NFT'
+            textColor='#FFFFFF'
+            textStyle={{
+              fontStyle: 'normal',
+              fontWeight: 600,
+              fontSize: 16,
+              textAlign: 'center',
+              letterSpacing: ' -0.408px',
+            }}
+          />
+        }
         backgroundColor="#F7E9FF"
         backgroundImg='/images/backgrounds/create_nft_seections.png'
         textColor='#414047'

@@ -25,7 +25,6 @@
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
-  line-height: 20px;
   text-align: center;
 }
 
@@ -45,7 +44,6 @@
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
-  line-height: 20px;
 }
 
 .footer a {
@@ -69,7 +67,6 @@
 
 .title {
   margin: 0;
-  line-height: 1.15;
   font-size: 4rem;
 }
 
@@ -80,7 +77,6 @@
 
 .description {
   margin: 4rem 0;
-  line-height: 1.5;
   font-size: 1.5rem;
 }
 
@@ -128,7 +124,6 @@
 .card p {
   margin: 0;
   font-size: 1.25rem;
-  line-height: 1.5;
 }
 
 .logo {
