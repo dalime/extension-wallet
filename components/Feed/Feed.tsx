@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import FeedSection from './FeedSection';
-import styles from '../styles/Feed.module.css';
-import Collectibles from './Collectibles';
-import Transactions from './Transactions';
+import styles from '../../styles/Feed.module.css';
+import Collectibles from '../Collectibles/Collectibles';
+import Transactions from '../Transactions/Transactions';
 
 export default function Feed(): JSX.Element {
   const [viewCollectibles, setViewCollectibles] = useState<boolean>(true);

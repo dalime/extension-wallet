@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import type { NextPage } from 'next'
-import Splash from '../components/Splash';
-import Navbar from '../components/Navbar';
-import Feed from '../components/Feed';
+import Splash from '../components/Loaders/Splash';
+import Navbar from '../components/Nav/Navbar';
+import Feed from '../components/Feed/Feed';
 
 const Home: NextPage = () => {
   const [loading, setLoading] = useState<boolean>(true);

@@ -1,8 +1,8 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
-import UserTag from './UserTag';
-import styles from '../styles/Navbar.module.css';
+import UserTag from '../Common/UserTag';
+import styles from '../../styles/Navbar.module.css';
 
 const stylez = {
   button: {

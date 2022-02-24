@@ -1,6 +1,6 @@
 import React, { CSSProperties } from 'react';
 import Image from 'next/image';
-import styles from '../styles/Feed.module.css';
+import styles from '../../styles/Feed.module.css';
 
 interface Props {
   name: string
@@ -39,7 +39,7 @@ export default function FeedSection({ name, textColor, child, toSection, backgro
         >
           <Image
             src="/images/symbols/chevron_right.svg"
-            alt="Home symbol"
+            alt="Chevron right"
             width={15}
             height={15}
           />
