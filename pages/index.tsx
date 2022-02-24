@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Head from 'next/head';
 import type { NextPage } from 'next'
 import Splash from '../components/Splash';
 import Navbar from '../components/Navbar';
@@ -19,6 +20,11 @@ const Home: NextPage = () => {
 
   return (
     <>
+      <Head>
+        <title>Extension Wallet</title>
+        <meta name="description" content="Extension Wallet for PrimeLab" />
+        <link rel="icon" href="/images/logos/primelab_logo.ico" />
+      </Head>
       <Navbar />
       <Feed />
     </>
